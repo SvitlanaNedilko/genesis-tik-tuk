@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react'
+import React, { useState, useEffect } from 'react'
 import { useParams } from 'react-router-dom'
 import { UserInfo } from '../../components/UserInfo/UserInfo'
 import { UserFeeds } from '../../components/UserFeeds/UserFeeds'

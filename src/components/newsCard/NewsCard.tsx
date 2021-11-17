@@ -12,7 +12,7 @@ export const NewsCard: React.FC<IFeedCardProps> = ({ post }) => {
     <li key={post.id} className="Feed-Card">
       <div className="Feed-Card-Info">
         <div className="User-Section">
-          <Link to={`/${post.authorMeta.name}`}>
+          <Link to={`/genesis-tik-tuk/${post.authorMeta.name}`}>
             <img
               className="User-Section-Avatar"
               src={post.authorMeta.avatar}
@@ -22,7 +22,7 @@ export const NewsCard: React.FC<IFeedCardProps> = ({ post }) => {
             />
           </Link>
           <div className="User-Section-Info">
-            <Link to={`/${post.authorMeta.name}`}>
+            <Link to={`/genesis-tik-tuk/${post.authorMeta.name}`}>
               <h2 className="User-Section-Info-Name">{post.authorMeta.name}</h2>
             </Link>
 

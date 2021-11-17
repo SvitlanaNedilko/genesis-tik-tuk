@@ -11,11 +11,11 @@ function App() {
     <>
       <BrowserRouter>
         <header className="App-header">
-          <Link to="/">tikTuk</Link>
+          <Link to="/genesis-tik-tuk/">tikTuk</Link>
         </header>
         <Routes>
-          <Route element={<NewsPage />} path="/" />
-          <Route element={<UserPage />} path=":name" />
+          <Route element={<NewsPage />} path="/genesis-tik-tuk/" />
+          <Route element={<UserPage />} path="genesis-tik-tuk/:name" />
         </Routes>
       </BrowserRouter>
       <ToastContainer />
