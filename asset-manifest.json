@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/genesis-tik-tuk/static/css/main.fa684aec.chunk.css",
+    "main.js": "/genesis-tik-tuk/static/js/main.5d6ab05c.chunk.js",
+    "main.js.map": "/genesis-tik-tuk/static/js/main.5d6ab05c.chunk.js.map",
+    "runtime-main.js": "/genesis-tik-tuk/static/js/runtime-main.9cebc0df.js",
+    "runtime-main.js.map": "/genesis-tik-tuk/static/js/runtime-main.9cebc0df.js.map",
+    "static/css/2.58a45539.chunk.css": "/genesis-tik-tuk/static/css/2.58a45539.chunk.css",
+    "static/js/2.ce57ee2a.chunk.js": "/genesis-tik-tuk/static/js/2.ce57ee2a.chunk.js",
+    "static/js/2.ce57ee2a.chunk.js.map": "/genesis-tik-tuk/static/js/2.ce57ee2a.chunk.js.map",
+    "index.html": "/genesis-tik-tuk/index.html",
+    "static/css/2.58a45539.chunk.css.map": "/genesis-tik-tuk/static/css/2.58a45539.chunk.css.map",
+    "static/css/main.fa684aec.chunk.css.map": "/genesis-tik-tuk/static/css/main.fa684aec.chunk.css.map",
+    "static/js/2.ce57ee2a.chunk.js.LICENSE.txt": "/genesis-tik-tuk/static/js/2.ce57ee2a.chunk.js.LICENSE.txt",
+    "static/media/comment.8ec7c163.svg": "/genesis-tik-tuk/static/media/comment.8ec7c163.svg",
+    "static/media/like.d150a380.svg": "/genesis-tik-tuk/static/media/like.d150a380.svg",
+    "static/media/loading.ccc48aae.svg": "/genesis-tik-tuk/static/media/loading.ccc48aae.svg",
+    "static/media/tik-tok.22688f9a.jpg": "/genesis-tik-tuk/static/media/tik-tok.22688f9a.jpg",
+    "static/media/views.0e4865a3.svg": "/genesis-tik-tuk/static/media/views.0e4865a3.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.9cebc0df.js",
+    "static/css/2.58a45539.chunk.css",
+    "static/js/2.ce57ee2a.chunk.js",
+    "static/css/main.fa684aec.chunk.css",
+    "static/js/main.5d6ab05c.chunk.js"
+  ]
+}
