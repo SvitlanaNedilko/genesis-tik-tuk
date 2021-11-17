@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 import { useParams } from 'react-router-dom'
 import { UserInfo } from '../../components/UserInfo/UserInfo'
 import { UserFeeds } from '../../components/UserFeeds/UserFeeds'
-import { getUserInfo, getUserFeeds } from '../../servises/servises'
+import { getUserInfo, getNewPosts } from '../../servises/servises'
 import './UserPage.scss'
 import { Pagination } from '@mui/material'
 import { ReactComponent as LoaderIcon } from '../../assets/loading.svg'
@@ -20,7 +20,7 @@ export default function UserPage() {
     window.scrollTo({ behavior: 'smooth', top: 0 })
     setPage(page)
     setLoading(true)
-    getUserFeeds(userInfo.user.uniqueId, page).then((response) => {
+    getNewPosts(page).then((response) => {
       setUserFeeds(response)
       setLoading(false)
     })
@@ -29,7 +29,7 @@ export default function UserPage() {
   useEffect(() => {
     setLoading(true)
     const infoPromise = getUserInfo(name as string)
-    const feedsPromise = getUserFeeds(name as string)
+    const feedsPromise = getNewPosts()
     Promise.all([infoPromise, feedsPromise])
       .then(([valueInfo, valueFeeds]) => {
         setUserInfo(valueInfo)

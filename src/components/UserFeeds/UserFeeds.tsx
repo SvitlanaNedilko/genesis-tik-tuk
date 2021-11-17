@@ -15,15 +15,9 @@ export const UserFeeds: React.FC<IUserFeedsProps> = ({ userFeeds }) => {
         <li className="User-Feed-Item" key={feed.id}>
           <div className="Views-information">
             <ViewsIcon className="Count-Icon" />
-            <p className="Count-Number">{feed.stats.playCount}</p>
+            <p className="Count-Number">{feed.playCount}</p>
           </div>
-          <VideoComponent
-            post={{
-              ...feed,
-              covers: { origin: PlaceHolderImage, default: '', dynamic: '' },
-            }}
-            hideInfo
-          />
+          <VideoComponent post={feed} hideInfo />
         </li>
       ))}
     </ul>

@@ -25,14 +25,12 @@ export const VideoComponent: React.FC<IVideoComponentProps> = ({
   const isVisible = useAutoPlay(options, videoRef)
 
   useEffect(() => {
-    if (!hideInfo) {
-      if (isVisible) {
-        videoRef.current!.play()
-      } else {
-        videoRef.current!.pause()
-      }
+    if (isVisible) {
+      videoRef.current!.play()
+    } else {
+      videoRef.current!.pause()
     }
-  }, [isVisible, hideInfo])
+  }, [isVisible])
 
   return (
     <div className="Video-wrapper">

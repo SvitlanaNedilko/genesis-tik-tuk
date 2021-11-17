@@ -32,7 +32,6 @@ declare interface IPost {
   commentCount: number
   authorMeta: IAuthorMeta
   covers: ICovers
-  stats: IStats
   hashtags: IHashtag[]
 }
 
