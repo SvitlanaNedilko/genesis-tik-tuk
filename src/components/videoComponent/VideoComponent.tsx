@@ -16,6 +16,7 @@ export const VideoComponent: React.FC<IVideoComponentProps> = ({
   hideInfo,
 }) => {
   const videoRef = useRef<HTMLVideoElement>(null)
+  const playRef = useRef<any>(null)
   const options = {
     root: null,
     rootMargin: '0px',
@@ -26,9 +27,13 @@ export const VideoComponent: React.FC<IVideoComponentProps> = ({
 
   useEffect(() => {
     if (isVisible) {
-      videoRef.current!.play()
+      playRef.current = videoRef.current!.play()
     } else {
-      videoRef.current!.pause()
+      if (playRef.current != null) {
+        playRef.current.then(() => {
+          videoRef.current!.pause()
+        })
+      }
     }
   }, [isVisible])
 
@@ -41,7 +46,7 @@ export const VideoComponent: React.FC<IVideoComponentProps> = ({
         loop
         poster={post.covers.origin}
         ref={videoRef}
-        preload="auto"
+        preload="none"
         muted
       >
         <source src={post.videoUrl} />

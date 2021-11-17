@@ -1,7 +1,6 @@
 import React from 'react'
 import { VideoComponent } from '../videoComponent/VideoComponent'
 import './UserFeeds.scss'
-import PlaceHolderImage from '../../assets/tik-tok.jpg'
 import { ReactComponent as ViewsIcon } from '../../assets/views.svg'
 
 interface IUserFeedsProps {
