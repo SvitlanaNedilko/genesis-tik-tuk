@@ -1,0 +1,39 @@
+.User-Feeds-List {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  padding: 36px;
+  justify-content: center;
+
+  .User-Feed-Item {
+    position: relative;
+    display: block;
+    max-width: 250px;
+    border: 1px solid #000000;
+  }
+}
+
+.Views-information {
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  width: 100%;
+  top: 0;
+  left: 0;
+  padding: 6px;
+  background-color: rgba(#85828249, 0.7);
+
+  .Count-Icon {
+    display: block;
+    height: 30px;
+    width: 30px;
+    fill: white;
+  }
+
+  .Count-Number {
+    margin: 5px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+  }
+}

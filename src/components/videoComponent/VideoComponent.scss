@@ -1,0 +1,39 @@
+.Feed-Video {
+  display: block;
+  width: 100%;
+}
+
+.Counts {
+  position: absolute;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  padding: 6px;
+  background-color: rgba(#85828249, 0.7);
+
+  .Count-Icon {
+    display: block;
+    height: 30px;
+    width: 30px;
+    margin: auto;
+    fill: white;
+    margin: 0 auto;
+  }
+
+  .Count-Number {
+    margin-top: 5px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+  }
+}
+
+.Video-wrapper {
+  position: relative;
+  width: fit-content;
+  margin: 0 auto;
+}

@@ -1,0 +1,36 @@
+.User-Info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  padding: 36px;
+
+  @media (max-width: 800px) {
+    flex-direction: column;
+  }
+
+  &-Avatar {
+    display: block;
+    border-radius: 50%;
+    overflow: hidden;
+    width: 200px;
+    height: 200px;
+    min-width: 200px;
+  }
+
+  .Info-wrapper {
+    @media (max-width: 800px) {
+      text-align: center;
+      max-width: 480px;
+
+      h1 {
+        margin: 0;
+      }
+
+      h2 {
+        margin-top: 12px;
+        margin-bottom: 8px;
+      }
+    }
+  }
+}

@@ -1,0 +1,15 @@
+.Feeds-List {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+  padding: 36px;
+  margin: 0 auto;
+}
+
+.Pagination-wrapper {
+  display: flex;
+  justify-content: center;
+  margin: 24px 0;
+  width: 100%;
+}
